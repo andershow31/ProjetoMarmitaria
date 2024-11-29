@@ -1,0 +1,27 @@
+<div class="row mb-2">
+    <div class="col-12">
+        <button class="btn btn-success">Nova Marmita</button>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">       
+        <a href="#" class="list-group-item clearfix" *ngFor="let marmita of marmitas">
+            <div class="float-start">
+                <h4 class="list-group-item">Nome da Marmita: {{marmita.name}}</h4>
+                <p class="list-group-item">Descrição da Marmita: {{marmita.description}}</p>
+              
+            </div>
+            <div class="float-end">
+                <img 
+             
+                [src]="marmita.imagePath"
+ 
+                alt="{{marmita.name}}" class="img-thumbnail" >
+                               <!-- podemos usar da forma acima ou    src="{{marmita.imagePath}}" -->
+            </div>
+        </a>
+        <!-- <app-marmita-item></app-marmita-item> -->
+    </div>
+</div>
+
+

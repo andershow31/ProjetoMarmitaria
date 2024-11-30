@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Marmita } from './marmita.model';
+import { Marmita } from '../marmita.model';
 
 @Component({
   selector: 'app-marmita-list',
